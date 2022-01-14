@@ -2,11 +2,7 @@
   <div>
     <canvas ref="canvas" class="canvas" width="1024" height="512" />
     <div class="main_content">
-      <header>
-        <nuxt-link to="/about">
-          About Me
-        </nuxt-link>
-      </header>
+      <nav-header />
       <main>
         <secton>
           <Nuxt />
@@ -32,9 +28,42 @@ export default Vue.extend({
 </script>
 
 <style>
+
+:root {
+  --background: #2D2B55;
+  --background-dark: #1E1E3F;
+  --foreground: #bdb2fc;
+  --anchors: #4D21FC;
+  --visited-anchor: #B362FF;
+  --contrast: #FAD000;
+  --contrast-lite: #FFEE80;
+  --contrast-liite-2: #FAEFA5;
+  --definitions: #FB94FF;
+}
+h1, h2 {
+  color: var(--definitions);
+}
+
+a {
+  color: var(--anchors);
+}
+
+* {
+  color: var(--foreground);
+  font-family: sans-serif;
+}
+
+a:visited {
+  color: var(--visited-anchor);
+}
+
 body {
   margin: 0 0 0 0;
-  background-color: black;
+  background-color: var(--background);
+}
+
+html {
+  font-size: 16px
 }
 
 li {
@@ -51,9 +80,15 @@ li {
 .main_content {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--background);
   position: fixed;
   z-index: 1;
   top: 0
+}
+
+@media (prefers-reduced-motion: reduce ), ( prefers-contrast: more ) {
+  .canvas{
+    display: none
+  }
 }
 </style>
