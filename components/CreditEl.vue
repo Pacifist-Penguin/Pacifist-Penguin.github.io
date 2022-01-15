@@ -16,13 +16,13 @@
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
-import creditInfo from '@/types/CredtInfo'
+import СreditInfo from '@/types/CredtInfo'
 
 export default Vue.extend({
   name: 'CreditEl',
   props: {
     creditInfo: {
-      type: Object as PropType<creditInfo>,
+      type: Object as PropType<СreditInfo>,
       required: true
     }
   }

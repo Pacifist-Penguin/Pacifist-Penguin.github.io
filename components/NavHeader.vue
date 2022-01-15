@@ -3,7 +3,7 @@
     <ul>
       <li>
         <nuxt-link to="/">
-          About Me
+          About me / Contacts
         </nuxt-link>
       </li>
       <li>
@@ -12,9 +12,9 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/git">
+        <a href="https://github.com/NewPirateOfUASeas">
           Git
-        </nuxt-link>
+        </a>
       </li>
       <li>
         <nuxt-link to="/credits">
@@ -51,6 +51,28 @@ li a {
 li a:hover {
   background-color: var(--background-dark);
   color: var(--contrast);
+}
+
+a.nuxt-link-exact-active {
+  color: var(--contrast-lite);
+}
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+ul {
+  width: 100%;
+  padding-left: 0px;
+  margin: 2vmin auto;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 </style>

@@ -1,15 +1,21 @@
 <template>
   <article>
-    <h2>The state of the modern web</h2>
-    <p> I don't like it</p>
+    <!-- article name -->
+    <nuxt-link :to="'/blog/' + articleContent.slug">
+      {{ articleContent.title }}
+    </nuxt-link>
+    <!-- should contain a short description -->
+    <p>{{ articleContent.description }}</p>
+    <img class="imagePreview" :src="articleContent.img">
+    <!-- time, will be displayed relative in case there's no noscript on client -->
     <time datetime="2022-01-14 19:00">{{ time }}</time>
   </article>
 </template>
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
-import moment from 'moment'
-import PostPreview from '~/types/ArticleContent'
+import PostPreview from '~/types/PostPreview'
+
 export default Vue.extend({
   name: 'BlogPostPreview',
   props: {
@@ -19,16 +25,33 @@ export default Vue.extend({
   },
   data () {
     return {
-      time: 'NuxtGenerated'
+      time: '6/29/2011 4:52:48 PM UTC',
+      onServer: true
     }
   },
   mounted () {
     this.localizeTime()
+    this.onServer = false
   },
   methods: {
     localizeTime () {
-      this.time = moment().format()
+      this.time = new Date(this.time)
     }
   }
 })
 </script>
+
+<style scoped>
+a {
+  font-size: 1.5rem;
+}
+.imagePreview{
+  max-height: 45vh
+}
+time {
+  display: block;
+}
+article {
+  padding-bottom: 5vmin;
+}
+</style>

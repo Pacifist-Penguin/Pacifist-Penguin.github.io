@@ -4,12 +4,14 @@
     <div class="main_content">
       <nav-header />
       <main>
-        <secton>
+        <section>
           <Nuxt />
-        </secton>
+        </section>
       </main>
       <footer>
-        Footer
+        This site is under
+        <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public License</a>.
+        So here is the <a href="https://github.com/NewPirateOfUASeas/portfolio/tree/master">source code</a>.
       </footer>
     </div>
   </div>
@@ -30,14 +32,14 @@ export default Vue.extend({
 <style>
 
 :root {
-  --background: #2D2B55;
+  --background: #2D2B55AA;
   --background-dark: #1E1E3F;
   --foreground: #bdb2fc;
   --anchors: #4D21FC;
   --visited-anchor: #B362FF;
   --contrast: #FAD000;
   --contrast-lite: #FFEE80;
-  --contrast-liite-2: #FAEFA5;
+  --contrast-lite-2: #FAEFA5;
   --definitions: #FB94FF;
 }
 h1, h2 {
@@ -59,7 +61,8 @@ a:visited {
 
 body {
   margin: 0 0 0 0;
-  background-color: var(--background);
+  background-color: var(--background) !important;
+  /* have to use !important since i put inline style in the /app.html */
 }
 
 html {
@@ -79,16 +82,27 @@ li {
 
 .main_content {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background);
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0
+}
+
+section, footer {
+  padding-left: 20vmin;
+  padding-right: 20vmin;
 }
 
 @media (prefers-reduced-motion: reduce ), ( prefers-contrast: more ) {
   .canvas{
     display: none
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --background: #2D2B55
   }
 }
 </style>

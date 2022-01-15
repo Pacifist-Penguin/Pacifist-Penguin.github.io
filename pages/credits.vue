@@ -22,6 +22,10 @@ export default Vue.extend({
               href: 'https://ahmadawais.com/'
             },
             {
+              name: 'Shades of Purple',
+              href: 'https://github.com/ahmadawais/shades-of-purple-vscode'
+            },
+            {
               name: 'Github',
               href: 'https://github.com/ahmadawais'
             },
