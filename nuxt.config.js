@@ -1,3 +1,4 @@
+import { markdown } from 'markdown'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -38,8 +39,47 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/feed'
   ],
+
+  feed () {
+    const baseUrlArticles = 'http://localhost:3000/blog'
+    const baseLinkFeedArticles = '/blog/'
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' }
+    }
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: "NewPirateOfUASea's blog",
+        description: 'I write on tech and whatnot',
+        link: baseUrlArticles
+      }
+      const articles = await $content('articles', { text: true }).fetch()
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+        const convertedText = markdown.toHTML(article.text)
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          date: article.published,
+          description: article.description,
+          content: convertedText,
+          author: article.authors
+        })
+      })
+    }
+
+    return Object.values(feedFormats).map(({ file, type }) => ({
+      path: `${baseLinkFeedArticles}/${file}`,
+      type,
+      create: createFeedArticles
+    }))
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
