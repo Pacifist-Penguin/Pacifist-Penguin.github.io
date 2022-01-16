@@ -39,6 +39,10 @@ a {
   background-color: #1E1E3F;
 }
 
+li {
+  display: inline;
+}
+
 li a {
   display: inline-block;
   color: white;
@@ -58,7 +62,7 @@ a.nuxt-link-exact-active {
 }
 
 header {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

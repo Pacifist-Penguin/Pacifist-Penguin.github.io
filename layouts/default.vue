@@ -9,6 +9,7 @@
         </section>
       </main>
       <footer>
+        <hr>
         This site is under
         <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public License</a>.
         So here is the <a href="https://github.com/NewPirateOfUASeas/portfolio/tree/master">source code</a>.
@@ -42,7 +43,7 @@ export default Vue.extend({
   --contrast-lite-2: #FAEFA5;
   --definitions: #FB94FF;
 }
-h1, h2 {
+h1, h2, h3 {
   color: var(--definitions);
 }
 
@@ -67,10 +68,6 @@ body {
 
 html {
   font-size: 16px
-}
-
-li {
-  display: inline;
 }
 
 .canvas {
@@ -105,4 +102,15 @@ section, footer {
     --background: #2D2B55
   }
 }
+
+@media screen and (orientation: portrait) {
+  section, footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  section, footer {
+    font-size: 1.3rem;
+  }
+}
+
 </style>
