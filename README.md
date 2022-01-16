@@ -1,5 +1,7 @@
 # portfolio
 
+This site is tottally usable with **noscript**.
+
 ## Build Setup
 
 ```bash

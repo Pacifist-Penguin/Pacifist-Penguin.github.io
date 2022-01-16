@@ -1,62 +1,90 @@
 <template>
-  <header>
-    <ul>
-      <li>
-        <nuxt-link to="/">
-          About me / Contacts
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/projects">
-          Projects demo
-        </nuxt-link>
-      </li>
-      <li>
-        <a href="https://github.com/NewPirateOfUASeas">
-          Git
-        </a>
-      </li>
-      <li>
-        <nuxt-link to="/credits">
-          Credits
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/blog">
-          Blog
-        </nuxt-link>
-      </li>
-    </ul>
-  </header>
+  <nav class="navbar">
+    <div class="nav-links">
+      <input id="checkbox_toggle" type="checkbox">
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <ul class="menu">
+        <li>
+          <nuxt-link to="/">
+            About me / Contacts
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/projects">
+            Projects demo
+          </nuxt-link>
+        </li>
+        <li>
+          <a href="https://github.com/NewPirateOfUASeas"> Git </a>
+        </li>
+        <li>
+          <nuxt-link to="/credits">
+            Credits
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/blog">
+            Blog
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
 a {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #1E1E3F;
-}
-
-li {
-  display: inline;
-}
-
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 1rem 2rem;
   text-decoration: none;
+  color: white
+}
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+}
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 1.25rem;
+  z-index: 2;
+}
+.menu a:hover {
+  background-color: var(--background-dark);
   border-radius: 0.5rem;
 }
-
+.menu a {
+  padding: 0.5rem 1rem;
+}
+.services {
+  position: relative;
+}
+.dropdown {
+  background-color: var(--background-dark);
+  position: absolute;
+  display: none;
+  top: 1.2rem;
+}
+.dropdown li + li {
+  margin-top: 1rem;
+}
+.services:hover .dropdown {
+  display: block;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+  user-select: none;
+}
 li a:hover {
   background-color: var(--background-dark);
   color: var(--contrast);
 }
-
 a.nuxt-link-exact-active {
   color: var(--contrast-lite);
 }
@@ -65,18 +93,41 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-ul {
-  width: 100%;
-  padding-left: 0px;
-  margin: 2vmin auto;
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--background);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 0px;
+  }
+  .menu li + li {
+    margin-top: 1rem;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .dropdown {
+    left: 50%;
+    top: 1rem;
+  }
+  .menu li a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    width: 100%;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
 }
 
 </style>

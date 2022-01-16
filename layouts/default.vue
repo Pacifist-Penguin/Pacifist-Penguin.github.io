@@ -103,7 +103,7 @@ section, footer {
   }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 768px) {
   section, footer {
     padding-left: 0px;
     padding-right: 0px;
