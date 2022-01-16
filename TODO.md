@@ -1,2 +1,1 @@
-* Fix how pubdate displayed
-* Make it so short posts won be displayed
+* Make it so short posts wont be displayed

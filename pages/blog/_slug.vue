@@ -17,9 +17,8 @@ export default Vue.extend({
 
 <style>
 .nuxt-content img{
-  max-width: 35vmin;
-}
-.nuxt-content * {
   display: block;
+  max-width: 65vmin;
+  margin: auto
 }
 </style>

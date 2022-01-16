@@ -42,6 +42,7 @@ export default Vue.extend({
   --contrast-lite: #FFEE80;
   --contrast-lite-2: #FAEFA5;
   --definitions: #FB94FF;
+  --inversion-for-dark-icons: invert(73%) sepia(27%) saturate(6659%) hue-rotate(359deg) brightness(106%) contrast(105%);
 }
 h1, h2, h3 {
   color: var(--definitions);

@@ -44,7 +44,7 @@ export default {
   ],
 
   feed () {
-    const baseUrlArticles = 'http://localhost:3000/blog'
+    const baseUrlArticles = 'https://newpirateofuaseas.github.io/personal-page/'
     const baseLinkFeedArticles = '/blog/'
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },

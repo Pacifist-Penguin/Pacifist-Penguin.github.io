@@ -5,7 +5,8 @@ type PostPreview = {
     slug: string,
     title: string,
     extension: string,
-    long: string
+    long: boolean,
+    createdAt: string
 }
 
 export default PostPreview

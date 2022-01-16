@@ -25,17 +25,20 @@ export default Vue.extend({
   },
   data () {
     return {
-      time: '6/29/2011 4:52:48 PM UTC' as string | Date,
-      onServer: true
+      time: this.articleContent.createdAt as string | Date
+    }
+  },
+  computed: {
+    dynamicComponent () {
+      return this.articleContent.long ? 'NuxtLink' : 'h1'
     }
   },
   mounted () {
     this.localizeTime()
-    this.onServer = false
   },
   methods: {
     localizeTime () {
-      this.time = new Date(this.time)
+      this.time = new Date(this.articleContent.createdAt)
     }
   }
 })
