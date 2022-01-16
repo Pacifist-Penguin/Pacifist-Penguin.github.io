@@ -25,7 +25,7 @@ export default Vue.extend({
   },
   data () {
     return {
-      time: '6/29/2011 4:52:48 PM UTC',
+      time: '6/29/2011 4:52:48 PM UTC' as string | Date,
       onServer: true
     }
   },

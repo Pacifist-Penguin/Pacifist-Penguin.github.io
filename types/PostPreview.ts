@@ -1,6 +1,6 @@
 type PostPreview = {
     description: string,
-    img: string,
+    img?: string,
     path: string,
     slug: string,
     title: string,

@@ -1,14 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
-    <a href="http://localhost:3000/rss"><img class="iconSize" src="@/static/rss-icon.svg" alt="rss icon"></a>
+    <a href="blog/rss.xml"><img class="iconSize" src="@/static/rss-icon.svg" alt="rss icon"></a>
     <blog-post-preview v-for="article in articles" :key="article.slog" :article-content="article" />
   </div>
 </template>
 
 <script lang="ts">
+import { contentFunc } from '@nuxt/content/types/content'
+
 export default {
-  async asyncData ({ $content }) {
+  // i put it in here only to fix TS compiler errors
+  async asyncData ({ $content } : { $content: contentFunc }) {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'long'])
       .sortBy('createdAt', 'desc')
