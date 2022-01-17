@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import gol from '@/includes/gol/gol.js'
+import gol from '@/includes/gol.js'
 
 export default Vue.extend({
   name: 'DefaultLayout',
