@@ -44,7 +44,6 @@ export default {
   ],
 
   feed () {
-    const baseUrlArticles = 'https://newpirateofuaseas.github.io/personal-page/'
     const baseLinkFeedArticles = '/blog/'
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },
@@ -55,17 +54,13 @@ export default {
     const createFeedArticles = async function (feed) {
       feed.options = {
         title: "NewPirateOfUASea's blog",
-        description: 'I write on tech and whatnot',
-        link: baseUrlArticles
+        description: 'I write on tech and whatnot'
       }
       const articles = await $content('articles', { text: true }).fetch()
       articles.forEach((article) => {
-        const url = `${baseUrlArticles}/${article.slug}`
         const convertedText = markdown.toHTML(article.text)
         feed.addItem({
           title: article.title,
-          id: url,
-          link: url,
           date: article.published,
           description: article.description,
           content: convertedText,
