@@ -1,0 +1,12 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "NewPirateOfUASea's blog",
+    "description": "I write on tech and whatnot",
+    "items": [
+        {
+            "content_html": "<h1>On RSS</h1>\n\n<p>RSS saves me so much time! I no longer spend time looking at recommendations on YouTube, etc., but only follow the people I really care about. Well, that&#39;s why i decided to use <a href=\"https://github.com/nuxt-community/feed-module\">@nuxtjs/feed</a> in this project. </p>\n\n<p>By the way, I use <a href=\"https://newsboat.org/\">Newsboat</a>. <img alt=\"newsboat screenshot\" src=\"https://newsboat.org/images/2.25-screenshot_1x-33f26153.png\"/> The main reason i use TUI applications whenever it&#39;s possible, is because those app are keyboard-driven, which is much better for your wrist health </p>",
+            "title": "Zoomer thoughts on RSS",
+            "summary": "My rant about RSS and a few words about TUI"
+        }
+    ]
+}
