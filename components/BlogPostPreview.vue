@@ -1,9 +1,9 @@
 <template>
   <article>
     <!-- article name -->
-    <nuxt-link :to="'/blog/' + articleContent.slug">
+    <component :is="dynamicComponent" :to="'/blog/' + articleContent.slug">
       {{ articleContent.title }}
-    </nuxt-link>
+    </component>
     <!-- should contain a short description -->
     <p>{{ articleContent.description }}</p>
     <img class="imagePreview" :src="articleContent.img">
@@ -30,7 +30,7 @@ export default Vue.extend({
   },
   computed: {
     dynamicComponent (): string {
-      return this.articleContent.long ? 'NuxtLink' : 'h1'
+      return this.articleContent.long ? 'nuxt-link' : 'h1'
     }
   },
   mounted () {
