@@ -10,7 +10,7 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/projects">
+          <nuxt-link to="/project-list">
             Projects demo
           </nuxt-link>
         </li>
