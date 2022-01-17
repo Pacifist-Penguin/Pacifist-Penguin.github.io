@@ -8,7 +8,7 @@
     <p>{{ articleContent.description }}</p>
     <img class="imagePreview" :src="articleContent.img">
     <!-- time, will be displayed relative in case there's no noscript on client -->
-    <time datetime="2022-01-14 19:00">{{ time }}</time>
+    <time>{{ time }}</time>
   </article>
 </template>
 
@@ -20,7 +20,20 @@ export default Vue.extend({
   name: 'BlogPostPreview',
   props: {
     articleContent: {
-      type: Object as PropType<PostPreview>
+      type: Object as PropType<PostPreview>,
+      required: true,
+      default: () => {
+        return {
+          description: 'Short description',
+          createdAt: '2022-01-16T11:59:20.452Z',
+          extension: '.md',
+          img: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Rss_Shiny_Icon.svg',
+          long: true,
+          path: '/articles/example',
+          slug: 'example',
+          title: 'title'
+        }
+      }
     }
   },
   data () {
