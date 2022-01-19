@@ -35,7 +35,7 @@
 <style scoped>
 a {
   text-decoration: none;
-  color: white
+  color: var(--foreground)
 }
 li {
   list-style: none;
