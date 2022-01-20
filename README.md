@@ -1,6 +1,13 @@
-# portfolio
+# personal-page
 
-This site is tottally usable with **noscript**.
+This site is totally usable with **noscript**, and that's on purpose. Please, try to keep it the way it is.
+Still, it have some quality of life features for those with javascript enabled.
+
+This app has been designed with [SSG](https://nuxtjs.org/docs/concepts/static-site-generation#static-site-generation) mode in mind. While it will work flawlessly as an [SPA](https://nuxtjs.org/docs/concepts/static-site-generation#spa-fallback) (please don't) or [SSR](https://nuxtjs.org/docs/concepts/server-side-rendering/) modes, I don't see the point in using those modes instead of SSG nor i feel safe using nodejs as a server for anything other than development.
+
+## CI/CD
+
+It's already automated with GitHub Actions, you only need to provide it with your [PAT](https://docs.GitHub.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) through the [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). It made sense for me since i was already using GitHub Pages. Still, i belive you can do the same (in case you're self-hosting everything yourself) with just [git post-recieve hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) or CI/CD tools other than GitHub Actions.
 
 ## Build Setup
 
@@ -8,15 +15,15 @@ This site is tottally usable with **noscript**.
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# generate static project
+$ npm run generate
 
 # build for production and launch server
 $ npm run build
 $ npm run start
 
-# generate static project
-$ npm run generate
+# serve with hot reload at localhost:3000
+$ npm run dev
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).

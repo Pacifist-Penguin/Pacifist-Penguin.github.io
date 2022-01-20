@@ -1,11 +1,16 @@
 <template>
-  <div>My page</div>
+  <nuxt-content :document="about[0]" />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  async asyncData ({ $content }) {
+    const about = await $content('about').fetch()
+
+    return { about }
+  }
 })
 </script>
