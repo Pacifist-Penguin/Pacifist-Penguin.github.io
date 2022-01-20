@@ -68,7 +68,30 @@
     max-width: 100vw;
     background-color: var(--background);
   }
+
+  .nuxt-content img{
+    display: block;
+    max-width: 65vmin;
+    margin: auto
+  }
   
+  .nuxt-content h1 {
+    font-size: 2rem
+  }
+  
+  .nuxt-content blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    background-color: var(--background-dark);
+    border-radius: 0.5rem;
+  }
+  
+  .nuxt-content a {
+    word-break: break-word;
+  }
+  
+
   section,
   footer {
     padding-left: 10rem;
