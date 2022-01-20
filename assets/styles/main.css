@@ -80,9 +80,8 @@
   }
   
   .nuxt-content blockquote {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: var(--background-dark);
     border-radius: 0.5rem;
   }
@@ -91,6 +90,10 @@
     word-break: break-word;
   }
   
+  .nuxt-content > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
   section,
   footer {
