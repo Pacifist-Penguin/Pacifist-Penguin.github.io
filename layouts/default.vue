@@ -56,6 +56,7 @@ export default Vue.extend({
     --contrast-lite: #073642;
     --contrast-lite-2: #002b36;
     --definitions: #2aa198;
+    --inversion-for-dark-icons: none;
   }
 }
 
@@ -106,8 +107,15 @@ html {
 
 section,
 footer {
-  padding-left: 20vmin;
-  padding-right: 20vmin;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+main {
+  padding-bottom: 3rem;
+}
+footer {
+  position: absolute;
+  bottom: 0
 }
 
 @media (prefers-reduced-motion: reduce), (prefers-contrast: more) {

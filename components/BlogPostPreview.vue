@@ -42,7 +42,7 @@ export default Vue.extend({
     }
   },
   computed: {
-    dynamicComponent (): string {
+    dynamicComponent (): 'nuxt-link' | 'h1' {
       return this.articleContent.long ? 'nuxt-link' : 'h1'
     }
   },

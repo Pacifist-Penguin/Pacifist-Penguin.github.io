@@ -81,6 +81,7 @@ input[type="checkbox"] {
   display: none;
   user-select: none;
 }
+
 li a:hover {
   background-color: var(--background-dark);
   color: var(--contrast);
@@ -93,6 +94,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -110,6 +112,9 @@ header {
   input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
+  input[type="checkbox"]:checked ~ .hamburger {
+    color: var(--contrast)
+  }
   .hamburger {
     display: block;
     font-size: 2rem;
@@ -123,7 +128,6 @@ header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: block;
-    width: 100%;
   }
   .navbar {
     justify-content: space-between;

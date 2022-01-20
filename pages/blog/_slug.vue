@@ -21,4 +21,8 @@ export default Vue.extend({
   max-width: 65vmin;
   margin: auto
 }
+
+.nuxt-content h1 {
+  font-size: 2rem
+}
 </style>
