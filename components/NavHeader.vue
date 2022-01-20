@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="nav-links">
-      <input id="checkbox_toggle" type="checkbox">
+      <input id="checkbox_toggle" ref="hiddenCheckbox" type="checkbox">
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <ul class="menu">
         <li>
@@ -31,6 +31,17 @@
     </div>
   </nav>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  watch: {
+    $route () {
+      (this.$refs.hiddenCheckbox as HTMLInputElement).checked = false
+    }
+  }
+})
+</script>
 
 <style scoped>
 a {
