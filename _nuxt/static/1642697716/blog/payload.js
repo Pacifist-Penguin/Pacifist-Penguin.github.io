@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog", {data:[{articles:[{slug:"on-rss",description:"My rant about RSS and a few words about TUI",title:"Zoomer thoughts on RSS",img:"https:\u002F\u002Fupload.wikimedia.org\u002Fwikipedia\u002Fcommons\u002Fb\u002Fb6\u002FRss_Shiny_Icon.svg",long:true,createdAt:"2022-01-20T16:54:20.623Z"}]}],fetch:{},mutations:void 0});
