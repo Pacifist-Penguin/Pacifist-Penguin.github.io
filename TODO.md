@@ -1,3 +1,2 @@
 # Accessibility:
-1. Bright mode
-2. Perhaps improve high-contrast mode
+1. Improve high-contrast mode for both, bright and dark modes

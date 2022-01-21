@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar">
     <div class="nav-links">
-      <input id="checkbox_toggle" ref="hiddenCheckbox" type="checkbox">
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <input id="dropdown_toggle" ref="hiddenCheckbox" type="checkbox">
+      <label role="button" for="dropdown_toggle" class="hamburger">&#9776;</label>
       <ul class="menu">
         <li>
           <nuxt-link to="/">
