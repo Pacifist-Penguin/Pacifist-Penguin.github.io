@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .iconSize {
-  max-height: 2rem;
+  max-width: 2rem;
   filter: var(--inversion-for-dark-icons)
 }
 </style>
