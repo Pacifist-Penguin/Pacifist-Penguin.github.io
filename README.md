@@ -7,8 +7,7 @@ This app has been designed with [SSG](https://nuxtjs.org/docs/concepts/static-si
 
 ## CI/CD
 
-It's already automated with GitHub Actions, you only need to provide it with your [PAT](https://docs.GitHub.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) through the [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). It made sense for me since i was already using GitHub Pages. Still, i belive you can do the same (in case you're self-hosting everything yourself) with just [git post-recieve hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) or CI/CD tools other than GitHub Actions.
-
+This project is already automated with GitHub Actions, you only need to give it your [PAT](https://docs.GitHub.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) via [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). It made sense to me since I was already using GitHub Pages. However, I believe you can do the same (in case you're hosting everything yourself) with just [git post-recive hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) or CI/CD tools other than GitHub Actions.
 ## Build Setup
 
 ```bash
