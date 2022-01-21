@@ -61,7 +61,7 @@ li {
   display: flex;
   gap: 1em;
   font-size: 1.25rem;
-  z-index: 2;
+  padding-left: 0;
 }
 .menu a:hover {
   background-color: var(--background-dark);
@@ -102,7 +102,7 @@ a.nuxt-link-exact-active {
 }
 
 header {
-  max-width: 1000px;
+  max-width: 62rem;
   margin: 0 auto;
 }
 

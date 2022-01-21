@@ -1,13 +1,44 @@
-:root {
+@media (prefers-contrast: more){
+  @media (prefers-color-scheme: dark) {
+  :root {
+      --background: #000000;
+      --background-dark: #333333;
+      --foreground: #ffffff;
+      --anchors: #4a4aff;
+      --visited-anchor: rgb(160, 58, 255);
+      --contrast: #ffff33;
+      --contrast-lite: #ffff66;
+      --contrast-lite-2: #ffffaa;
+      --definitions: #00ff00;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background: #fff;
+      --background-dark: #ccc;
+      --foreground: #000;
+      --anchors: #0000EE;
+      --visited-anchor: #551A8B;
+      --contrast: #6b4269;
+      --contrast-lite: #ad5e5e;
+      --contrast-lite-2: #d67777;
+      --definitions: #00b900;
+    }    
+  }
+}
+
+@media (prefers-contrast: less), (prefers-contrast: no-preference) {
+  :root {
     --background: #2d2b55;
     --background-dark: #1e1e3f;
     --foreground: #bdb2fc;
-    --anchors: #4d21fc;
-    --visited-anchor: #b362ff;
+    --anchors: #9EFFFF;
+    --visited-anchor: #ff94cf;
     --contrast: #fad000;
     --contrast-lite: #ffee80;
     --contrast-lite-2: #faefa5;
-    --definitions: #fb94ff;
+    --definitions: #fad000;
+    /* --definitions: #fb94ff; */
     --inversion-for-dark-icons: invert(73%) sepia(27%) saturate(6659%)
       hue-rotate(359deg) brightness(106%) contrast(105%);
   }
@@ -26,75 +57,65 @@
       --inversion-for-dark-icons: none;
     }
   }
-  
-  h1,
-  h2,
-  h3 {
-    color: var(--definitions);
-  }
-  
-  a {
-    color: var(--anchors);
-  }
-  
+}
+    
+h1,
+h2,
+h3,
+h4 {
+  color: var(--definitions);
+}
+a {
+  color: var(--anchors);
+}
+* {
+  color: var(--foreground);
+}
+a:visited {
+  color: var(--visited-anchor);
+}
+.main_content {
+  background-color: var(--background);
+}
+
   * {
-    color: var(--foreground);
     font-family: sans-serif;
   }
-  
-  a:visited {
-    color: var(--visited-anchor);
-  }
-  
   body {
-    margin: 0 0 0 0;
     background-color: var(--background) !important;
     /* have to use !important since i put inline style in the /app.html */
   }
-  
+  body {
+    margin: 0 0 0 0;
+  }
   html {
     font-size: 16px;
   }
-  
-  .canvas {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 0;
-  }
-  
   .main_content {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: var(--background);
   }
-
   .nuxt-content img{
     display: block;
     max-width: 65vmin;
     margin: auto
   }
-  
   .nuxt-content h1 {
     font-size: 2rem
   }
-  
   .nuxt-content blockquote {
+    background-color: var(--background-dark);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: var(--background-dark);
     border-radius: 0.5rem;
   }
-  
   .nuxt-content a {
     word-break: break-word;
   }
-  
   .nuxt-content > * {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
   section,
   footer {
     padding-left: 10rem;
@@ -106,22 +127,6 @@
   footer {
     bottom: 0
   }
-  
-  @media (prefers-reduced-motion: reduce), (prefers-contrast: more) {
-    .canvas {
-      display: none;
-    }
-  }
-  
-  @media (prefers-contrast: more) {
-    :root {
-      --background: #2d2b55;
-    }
-    .canvas {
-      display: none;
-    }
-  }
-  
   @media screen and (max-width: 768px) {
     section,
     footer {
