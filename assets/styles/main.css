@@ -125,11 +125,8 @@
   @media screen and (max-width: 768px) {
     section,
     footer {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-    section,
-    footer {
-      font-size: 1.3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1rem;
     }
   }
