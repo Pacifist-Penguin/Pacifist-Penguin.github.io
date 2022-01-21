@@ -13,7 +13,7 @@ export default {
   // i put it in here only to fix TS compiler errors
   async asyncData ({ $content } : { $content: contentFunc }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'long', 'createdAt'])
+      .only(['title', 'description', 'img', 'img_alt', 'slug', 'long', 'createdAt'])
       .sortBy('createdAt', 'desc')
       .fetch()
     return {

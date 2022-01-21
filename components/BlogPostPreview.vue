@@ -6,7 +6,7 @@
     </component>
     <!-- should contain a short description -->
     <p>{{ articleContent.description }}</p>
-    <img class="imagePreview" :src="articleContent.img">
+    <img class="imagePreview" :alt="articleContent.img_alt" :src="articleContent.img">
     <!-- time, will be displayed relative in case there's no noscript on client -->
     <time>{{ time }}</time>
   </article>
