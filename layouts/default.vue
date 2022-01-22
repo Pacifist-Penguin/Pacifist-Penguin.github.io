@@ -2,9 +2,7 @@
   <div class="main_content">
     <nav-header />
     <main>
-      <section>
-        <Nuxt />
-      </section>
+      <Nuxt />
     </main>
     <footer>
       <hr>

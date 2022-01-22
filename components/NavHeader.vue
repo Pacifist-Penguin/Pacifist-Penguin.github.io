@@ -116,6 +116,7 @@ header {
     text-align: center;
     padding: 1rem 0;
     margin-top: 0px;
+    z-index: 1;
   }
   .menu li + li {
     margin-top: 1rem;
