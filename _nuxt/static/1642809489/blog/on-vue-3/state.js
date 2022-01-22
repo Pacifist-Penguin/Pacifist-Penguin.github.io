@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fpersonal-page\u002F_nuxt\u002Fstatic\u002F1642809489",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Fon-vue-3",config:{_app:{basePath:"\u002Fpersonal-page\u002F",assetsPath:"\u002Fpersonal-page\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"fb2d08a8"}}}}(null));

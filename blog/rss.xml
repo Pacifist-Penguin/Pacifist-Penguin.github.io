@@ -4,7 +4,7 @@
         <title>NewPirateOfUASea's blog</title>
         <link>undefined</link>
         <description>I write on tech and whatnot</description>
-        <lastBuildDate>Fri, 21 Jan 2022 23:58:09 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Jan 2022 13:42:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -34,7 +34,8 @@ It would be a good place to start with why I care about this topic: I love using
 
 <p>While I don&#39;t have any problems with the composition API itself, I think this only complicates things. Unlike React which stated that they actually keep class components for backwards compatibility, but for new components you have to use hooks:</p>
 
-<blockquote><blockquote><h4>Should I use Hooks, classes, or a mix of both?</h4><p>When you’re ready, we’d encourage you to start trying Hooks in new components you write. Make sure everyone on your team is on board with using them and familiar with this documentation. We don’t recommend rewriting your existing classes to Hooks unless you planned to rewrite them anyway (e.g. to fix bugs).
+<blockquote><blockquote><p><strong>Should I use Hooks, classes, or a mix of both?</strong>
+When you’re ready, we’d encourage you to start trying Hooks in new components you write. Make sure everyone on your team is on board with using them and familiar with this documentation. We don’t recommend rewriting your existing classes to Hooks unless you planned to rewrite them anyway (e.g. to fix bugs).
 Source: https://reactjs.org/docs/hooks-faq.html</p></blockquote></blockquote>
 
 <p>The Vue team goes the other way and claims that the Composition API is purely <em>additive</em>:</p>
