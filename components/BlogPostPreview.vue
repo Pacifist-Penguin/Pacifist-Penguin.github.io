@@ -62,7 +62,8 @@ a {
   font-size: 1.5rem;
 }
 .imagePreview{
-  max-height: 45vh
+  height: min(35vh, 25rem);
+  max-width: 90%;
 }
 time {
   display: block;
