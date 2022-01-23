@@ -2,7 +2,13 @@
   <nav class="navbar">
     <div class="nav-links">
       <input id="dropdown_toggle" ref="hiddenCheckbox" type="checkbox">
-      <label role="button" for="dropdown_toggle" class="hamburger">&#9776;</label>
+      <label
+        role="button"
+        for="dropdown_toggle"
+        tabindex="0"
+        class="hamburger"
+        @keyup.enter.space="$refs.hiddenCheckbox.checked = !$refs.hiddenCheckbox.checked"
+      >&#9776;</label>
       <ul class="menu">
         <li>
           <nuxt-link to="/">
@@ -46,7 +52,7 @@ export default Vue.extend({
 <style scoped>
 a {
   text-decoration: none;
-  color: var(--foreground)
+  color: var(--foreground);
 }
 li {
   list-style: none;
@@ -106,10 +112,10 @@ header {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
   .menu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: var(--background);
     right: 0;
     left: 0;
@@ -125,7 +131,7 @@ header {
     display: block;
   }
   input[type="checkbox"]:checked ~ .hamburger {
-    color: var(--contrast)
+    color: var(--contrast);
   }
   .hamburger {
     display: block;
@@ -145,5 +151,4 @@ header {
     justify-content: space-between;
   }
 }
-
 </style>
