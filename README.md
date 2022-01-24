@@ -8,23 +8,21 @@ This app has been designed with [SSG](https://nuxtjs.org/docs/concepts/static-si
 ## CI/CD
 
 This project is already automated with GitHub Actions, you only need to give it your [PAT](https://docs.GitHub.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) via [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). It made sense to me since I was already using GitHub Pages. However, I believe you can do the same (in case you're hosting everything yourself) with just [git post-recive hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) or CI/CD tools other than GitHub Actions.
-## Build Setup
+
+## Host yourself
 
 ```bash
-# install dependencies
-$ npm install
-
-# generate static project
-$ npm run generate
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# serve with hot reload at localhost:3000
+# First, clone repo with the content submodule:
+$ git clone --recursive https://github.com/NewPirateOfUASeas/personal-page.git
+# Cd into cloned repo
+$ cd personal-page
+# Install node modules
+$ npm i
+# Start development mode
 $ npm run dev
+# Generate static project
+$ npm run generate
 ```
-
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
