@@ -41,6 +41,10 @@ The components directory contains your Vue.js components. Components make up the
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
+### `content`
+
+Source of all content on your site. Used as a kind of headless CMS based on Git. More on this in [nuxt/content documentation](https://content.nuxtjs.org/) 
+
 ### `layouts`
 
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
