@@ -11,6 +11,18 @@ export default Vue.extend({
     const article = await $content('articles', params.slug).fetch()
 
     return { article }
+  },
+  head () {
+    return {
+      title: this.article.title,
+      meta: [
+        {
+          hid: this.article.title,
+          name: this.article.title,
+          content: this.article.description
+        }
+      ]
+    }
   }
 })
 </script>
