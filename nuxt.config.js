@@ -4,12 +4,21 @@ export default {
   target: 'static',
 
   router: {
-    base: '/personal-page/'
+    base: process.env.BASE_URL
+  },
+
+  publicRuntimeConfig: {
+    URL: process.env.URL,
+    BLOG_FEED_URL: process.env.BLOG_FEED_URL,
+    SOURCE_CODE_URL: process.env.SOURCE_CODE_URL,
+    BLOG_TITLE: process.env.BLOG_TITLE,
+    BLOG_DESCRIPTION: process.env.BLOG_DESCRIPTION,
+    PERSONAL_GIT: process.env.PERSONAL_GIT
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: process.env.BLOG_TITLE,
     htmlAttrs: {
       lang: 'en'
     },
@@ -50,8 +59,8 @@ export default {
   ],
 
   feed () {
-    const baseUrlArticles = 'https://newpirateofuaseas.github.io/personal-page'
-    const baseLinkFeedArticles = '/blog/'
+    const baseUrlArticles = process.env.URL
+    const baseLinkFeedArticles = `/${process.env.BLOG_FEED_URL}/`
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },
       json: { type: 'json1', file: 'feed.json' }
@@ -60,8 +69,8 @@ export default {
 
     const createFeedArticles = async function (feed) {
       feed.options = {
-        title: "NewPirateOfUASea's blog",
-        description: 'I write on tech and whatnot',
+        title: process.env.BLOG_TITLE,
+        description: process.env.BLOG_DESCRIPTION,
         link: baseUrlArticles
       }
       const articles = await $content('articles', { text: true }).fetch()

@@ -21,7 +21,9 @@
           </nuxt-link>
         </li>
         <li>
-          <a href="https://github.com/NewPirateOfUASeas"> Git </a>
+          <new-anchor :href="$config.PERSONAL_GIT">
+            Git
+          </new-anchor>
         </li>
         <li>
           <nuxt-link to="/credits">
@@ -40,7 +42,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import NewAnchor from './NewAnchor.vue'
 export default Vue.extend({
+  components: { NewAnchor },
   watch: {
     $route () {
       (this.$refs.hiddenCheckbox as HTMLInputElement).checked = false
