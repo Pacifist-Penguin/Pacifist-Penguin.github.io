@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar">
-    <div class="nav-links">
+  <header class="navbar">
+    <nav class="nav-links">
       <input id="dropdown_toggle" ref="hiddenCheckbox" type="checkbox">
       <label
         role="button"
@@ -36,8 +36,8 @@
           </nuxt-link>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script lang="ts">
@@ -80,9 +80,6 @@ li {
 .menu a {
   padding: 0.5rem 1rem;
 }
-.services {
-  position: relative;
-}
 .dropdown {
   background-color: var(--background-dark);
   position: absolute;
@@ -91,9 +88,6 @@ li {
 }
 .dropdown li + li {
   margin-top: 1rem;
-}
-.services:hover .dropdown {
-  display: block;
 }
 input[type="checkbox"] {
   display: none;
