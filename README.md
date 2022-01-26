@@ -1,5 +1,7 @@
 # personal-page
 
+[DEMO](https://newpirateofuaseas.github.io/personal-page/)
+
 This site is totally usable with **noscript**, and that's on purpose. Please, try to keep it the way it is.
 Still, it have some quality of life features for those with javascript enabled.
 
@@ -35,15 +37,15 @@ The assets directory contains your uncompiled assets such as Stylus or Sass file
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
+### `content`
+
+Source of all content on your site. Used as a kind of headless CMS based on Git. More on this in [nuxt/content documentation](https://content.nuxtjs.org/) 
+
 ### `components`
 
 The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `content`
-
-Source of all content on your site. Used as a kind of headless CMS based on Git. More on this in [nuxt/content documentation](https://content.nuxtjs.org/) 
 
 ### `layouts`
 
