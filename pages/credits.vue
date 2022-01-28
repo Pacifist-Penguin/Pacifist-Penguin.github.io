@@ -5,6 +5,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  name: 'CreditsPage',
   async asyncData ({ $content, params }) {
     const credits = await $content('credits', params.slug).fetch()
 

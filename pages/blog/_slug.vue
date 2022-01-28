@@ -14,12 +14,13 @@ export default Vue.extend({
   },
   head () {
     return {
-      title: this.article.title,
+      // FIXME: Fix types
+      title: (this as any).article.title,
       meta: [
         {
-          hid: this.article.title,
-          name: this.article.title,
-          content: this.article.description
+          hid: (this as any).article.title,
+          name: (this as any).article.title,
+          content: (this as any).article.description
         }
       ]
     }
