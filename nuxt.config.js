@@ -94,6 +94,14 @@ export default {
       create: createFeedArticles
     }))
   },
+
+  content: {
+    markdown: {
+      prism: {
+        theme: 'assets/styles/prism-theme.css'
+      }
+    }
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
