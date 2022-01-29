@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
     <a href="blog/rss.xml"><img class="iconSize" src="@/static/rss-icon.svg" alt="rss icon"></a>
@@ -10,6 +9,7 @@
 import { contentFunc } from '@nuxt/content/types/content'
 
 export default {
+  name: 'IndexBlog',
   // i put it in here only to fix TS compiler errors
   async asyncData ({ $content } : { $content: contentFunc }) {
     const articles = await $content('articles')
