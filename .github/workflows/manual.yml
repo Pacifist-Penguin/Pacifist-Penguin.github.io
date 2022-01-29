@@ -17,6 +17,9 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.CONTENT_PAT }}
+      
+      - name: Submodule update
+        run: git submodule update --remote
 
       - name: Setup node env
         uses: actions/setup-node@v2.1.2
