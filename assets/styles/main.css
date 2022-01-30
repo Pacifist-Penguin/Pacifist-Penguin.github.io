@@ -98,7 +98,7 @@ a:visited {
   .nuxt-content img{
     display: block;
     width: min(50rem, 90%);
-    margin: auto
+    margin: 1rem auto 1rem auto
   }
   .nuxt-content h1 {
     font-size: 2rem
