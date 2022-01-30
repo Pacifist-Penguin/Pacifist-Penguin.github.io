@@ -44,7 +44,7 @@
   }
   @media (prefers-color-scheme: light) {
     :root {
-      --background: #fff;
+      --background: #00b900;
       --background-dark: #ccc;
       --foreground: #000;
       --anchors: #0000EE;
@@ -52,7 +52,7 @@
       --contrast: #6b4269;
       --contrast-lite: #ad5e5e;
       --contrast-lite-2: #d67777;
-      --definitions: #00b900;
+      --definitions: #fad000;
     }    
   }
 }
