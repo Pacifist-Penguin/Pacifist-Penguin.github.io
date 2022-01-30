@@ -13,6 +13,21 @@
     hue-rotate(359deg) brightness(106%) contrast(105%);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+      --background: #fdf6e3;
+      --background-dark: #eee8d5;
+      --foreground: #657b83;
+      --anchors: #268bd2;
+      --visited-anchor: #6c71c4;
+      --contrast: #586e75;
+      --contrast-lite: #073642;
+      --contrast-lite-2: #002b36;
+      --definitions: #2aa198;
+      --inversion-for-dark-icons: none;
+  }
+}
+
 @media (prefers-contrast: more){
   @media (prefers-color-scheme: dark) {
   :root {
@@ -42,22 +57,6 @@
   }
 }
 
-@media (prefers-contrast: less), (prefers-contrast: no-preference) {
-  @media (prefers-color-scheme: light) {
-    :root {
-      --background: #fdf6e3;
-      --background-dark: #eee8d5;
-      --foreground: #657b83;
-      --anchors: #268bd2;
-      --visited-anchor: #6c71c4;
-      --contrast: #586e75;
-      --contrast-lite: #073642;
-      --contrast-lite-2: #002b36;
-      --definitions: #2aa198;
-      --inversion-for-dark-icons: none;
-    }
-  }
-}
     
 h1,
 h2,
