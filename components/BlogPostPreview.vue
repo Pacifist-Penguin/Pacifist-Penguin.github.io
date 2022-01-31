@@ -63,6 +63,7 @@ a {
 }
 .imagePreview{
   height: min(35vh, 25rem);
+  margin-bottom: 1rem;
   max-width: 90%;
 }
 time {
