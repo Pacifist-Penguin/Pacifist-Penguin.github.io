@@ -102,10 +102,9 @@ a:visited {
   .nuxt-content h1 {
     font-size: 2rem
   }
-  .nuxt-content blockquote {
+  .nuxt-content > blockquote {
     background-color: var(--background-dark);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
   }
   .nuxt-content a {
