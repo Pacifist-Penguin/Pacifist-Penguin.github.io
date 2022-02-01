@@ -50,7 +50,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@aceforth/nuxt-optimized-images'
+    '@aceforth/nuxt-optimized-images',
+    'nuxt-compress'
   ],
 
   optimizedImages: {
@@ -61,8 +62,14 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    '@nuxtjs/feed'
+    '@nuxtjs/feed',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    gzip: true
+  },
 
   feed () {
     const baseUrlArticles = process.env.URL
