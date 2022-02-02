@@ -69,7 +69,7 @@ export default {
 
   sitemap: {
     gzip: true,
-    hostname: 'https://newpirateofuaseas.github.io/personal-page/'
+    hostname: process.env.URL
   },
 
   feed () {
