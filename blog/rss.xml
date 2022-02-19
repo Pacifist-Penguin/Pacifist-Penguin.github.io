@@ -4,19 +4,9 @@
         <title>NewPirateOfUASea's blog</title>
         <link>https://newpirateofuaseas.github.io/personal-page</link>
         <description>I write on tech and whatnot</description>
-        <lastBuildDate>Sat, 19 Feb 2022 16:52:54 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Feb 2022 17:04:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
-        <item>
-            <title><![CDATA[Zoomer thoughts on RSS]]></title>
-            <guid>https://newpirateofuaseas.github.io/personal-page/on-rss</guid>
-            <description><![CDATA[My rant about RSS and a few words about TUI]]></description>
-            <content:encoded><![CDATA[<h1>On RSS</h1>
-
-<p>RSS saves me so much time! I no longer spend time looking at recommendations on YouTube, etc., but only follow the people I really care about. Well, that&#39;s why i decided to use <a href="https://github.com/nuxt-community/feed-module">@nuxtjs/feed</a> in this project. </p>
-
-<p>By the way, I use <a href="https://newsboat.org/">Newsboat</a>. <img alt="newsboat screenshot" src="https://newsboat.org/images/2.25-screenshot_1x-33f26153.png"/> The main reason i use TUI applications whenever it&#39;s possible, is because those app are keyboard-driven, which is much better for your wrist health </p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[Why I'm worried about future of vue.js]]></title>
             <guid>https://newpirateofuaseas.github.io/personal-page/on-vue-3</guid>
@@ -56,6 +46,16 @@ Source: https://twitter.com/N_Tepluhina/status/1349429774729572352</p></blockquo
 <h3>Mixins</h3>
 
 <p>Fortunately or not, mixins are becoming less popular thanks to the Composition API. However, mixins are a real pain to work with. Don&#39;t believe me? Try to understand how this component works - https://github.com/bootstrap-vue/bootstrap-vue/blob/dev/src/components/carousel/carousel.js </p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Zoomer thoughts on RSS]]></title>
+            <guid>https://newpirateofuaseas.github.io/personal-page/on-rss</guid>
+            <description><![CDATA[My rant about RSS and a few words about TUI]]></description>
+            <content:encoded><![CDATA[<h1>On RSS</h1>
+
+<p>RSS saves me so much time! I no longer spend time looking at recommendations on YouTube, etc., but only follow the people I really care about. Well, that&#39;s why i decided to use <a href="https://github.com/nuxt-community/feed-module">@nuxtjs/feed</a> in this project. </p>
+
+<p>By the way, I use <a href="https://newsboat.org/">Newsboat</a>. <img alt="newsboat screenshot" src="https://newsboat.org/images/2.25-screenshot_1x-33f26153.png"/> The main reason i use TUI applications whenever it&#39;s possible, is because those app are keyboard-driven, which is much better for your wrist health </p>]]></content:encoded>
         </item>
     </channel>
 </rss>
