@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>NewPirateOfUASea's blog</title>
-        <link>https://newpirateofuaseas.github.io/personal-page</link>
+        <title>pacifist-penguin's blog</title>
+        <link>https://pacifist-penguin.github.io/personal-page/</link>
         <description>I write on tech and whatnot</description>
-        <lastBuildDate>Sat, 26 Feb 2022 20:18:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Feb 2022 22:29:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[Zoomer thoughts on RSS]]></title>
-            <guid>https://newpirateofuaseas.github.io/personal-page/on-rss</guid>
+            <guid>https://pacifist-penguin.github.io/personal-page//on-rss</guid>
             <description><![CDATA[My rant about RSS and a few words about TUI]]></description>
             <content:encoded><![CDATA[<h1>On RSS</h1>
 
@@ -19,7 +19,7 @@
         </item>
         <item>
             <title><![CDATA[Why I'm worried about future of vue.js]]></title>
-            <guid>https://newpirateofuaseas.github.io/personal-page/on-vue-3</guid>
+            <guid>https://pacifist-penguin.github.io/personal-page//on-vue-3</guid>
             <description><![CDATA[On future of vue.js]]></description>
             <content:encoded><![CDATA[<h1>Why I&#39;m worried about the future of Vue.js</h1>
 
