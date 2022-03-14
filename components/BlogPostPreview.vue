@@ -7,8 +7,6 @@
     <!-- should contain a short description -->
     <p>{{ articleContent.description }}</p>
     <img class="imagePreview" :alt="articleContent.img_alt" :src="articleContent.img">
-    <!-- time, will be displayed relative in case there's no noscript on client -->
-    <time>{{ time }}</time>
   </article>
 </template>
 
@@ -44,14 +42,6 @@ export default Vue.extend({
   computed: {
     dynamicComponent (): 'nuxt-link' | 'h1' {
       return this.articleContent.long ? 'nuxt-link' : 'h1'
-    }
-  },
-  mounted () {
-    this.localizeTime()
-  },
-  methods: {
-    localizeTime () {
-      this.time = new Date(this.articleContent.createdAt)
     }
   }
 })
