@@ -4,7 +4,7 @@
         <title>pacifist-penguin's blog</title>
         <link>https://pacifist-penguin.github.io/personal-page/</link>
         <description>I write on tech and whatnot</description>
-        <lastBuildDate>Mon, 14 Mar 2022 00:39:22 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Mar 2022 10:36:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -55,7 +55,7 @@ Source: https://twitter.com/N_Tepluhina/status/1349429774729572352</p></blockquo
 
 <h3>Mixins</h3>
 
-<p>Fortunately or not, mixins are becoming less popular thanks to the Composition API. However, mixins are a real pain to work with. Don&#39;t believe me? Try to understand how this component works - https://github.com/bootstrap-vue/bootstrap-vue/blob/dev/src/components/carousel/carousel.js </p>]]></content:encoded>
+<p>Fortunately or not, mixins are becoming less popular thanks to the <a href="https://vuejs.org/guide/reusability/composables.html">Composables</a>. However, mixins are a real pain to work with. Don&#39;t believe me? Try to understand how this component works - https://github.com/bootstrap-vue/bootstrap-vue/blob/dev/src/components/carousel/carousel.js </p>]]></content:encoded>
         </item>
     </channel>
 </rss>
