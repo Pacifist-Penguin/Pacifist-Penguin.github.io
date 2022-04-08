@@ -82,11 +82,8 @@ a:visited {
 
 body {
     background-color: var(--background) !important;
-    /* have to use !important since i put inline style in the /app.html */
-}
-
-body {
     margin: 0 0 0 0;
+    /* have to use !important since i put inline style in the /app.html */
 }
 
 html {
@@ -132,6 +129,7 @@ footer {
 
 main {
     padding-bottom: 3rem;
+    min-height: 70vh;
 }
 
 footer {
