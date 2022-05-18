@@ -1,12 +1,5 @@
 <template>
-  <div>
-    <div>
-      <nuxt-content :document="about[0]" />
-    </div>
-    <div>
-      <img src="~assets/images/Derek.jpeg" />
-    </div>
-  </div>
+  <nuxt-content :document="about[0]" />
 </template>
 
 <script lang="ts">
