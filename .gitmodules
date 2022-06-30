@@ -1,4 +1,4 @@
 [submodule "content"]
 	path = content
-	url = https://github.com/NewPirateOfUASeas/personal-page-content
+	url = https://github.com/Pacifist-Penguin/personal-page-content
 	branch = master
