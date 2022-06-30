@@ -1,6 +1,6 @@
 # personal-page
 
-[DEMO](https://newpirateofuaseas.github.io/personal-page/)
+[DEMO](https://pacifist-penguin.github.io/)
 
 This site is totally usable with **noscript**, and that's on purpose. Please, try to keep it the way it is.
 Still, it have some quality of life features for those with javascript enabled.
@@ -15,7 +15,7 @@ This project is already automated with GitHub Actions, you only need to give it 
 
 ```bash
 # First, clone repo with the content submodule:
-$ git clone --recursive https://github.com/NewPirateOfUASeas/personal-page.git
+$ git clone --recursive https://github.com/Pacifist-Penguin/Pacifist-Penguin.github.io.git
 # Cd into cloned repo
 $ cd personal-page
 # Install node modules
